@@ -10,6 +10,7 @@ import Home from './Home.vue'
 import Address from './Address.vue'
 import Send from './Send.vue'
 import IssueInvoice from './IssueInvoice.vue'
+import Invoice from './Invoice.vue'
 import Jpy from './Jpy.vue'
 
 import './default.css'
@@ -26,6 +27,7 @@ const router = new VueRouter({
     {path:"/send/:currency",component:Send,props:true},
     {path:"/issueInvoice",component:IssueInvoice},
     {path:"/jpy",component:Jpy},
+    {path:"/invoice/:id",component:Invoice,props:true}
   ]
 })
 
